@@ -5,7 +5,7 @@ two-lap races, rings, hazards, jumping, spring launchers, boost pads, three
 computer rivals, and forgiving auto-forward controls. Original procedural
 models and Web Audio music; no remote runtime assets.
 
-![Sonic racing through the Sunbird Loop in Parrot Paradise](docs/screenshots/parrot-paradise.jpg)
+![Sonic racing along a palm-lined jungle bend in Parrot Paradise](docs/screenshots/parrot-paradise.jpg)
 
 *Gameplay in Parrot Paradise, the fourth track.*
 

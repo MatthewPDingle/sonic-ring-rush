@@ -1,0 +1,14 @@
+node_modules/
+dist/
+release/
+output/
+.playwright-cli/
+.npm-cache/
+.android-tools/
+android/build/
+android/signing/
+android/assets/www/
+.env
+.env.*
+*.keystore
+*.p12

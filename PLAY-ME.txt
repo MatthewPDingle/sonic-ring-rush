@@ -1,0 +1,47 @@
+SONIC RING RUSH
+A small, unofficial Sonic fan adventure for Windows browsers.
+
+1. Extract the whole ZIP into a folder.
+2. Double-click Start-Game.cmd.
+3. Choose a world, then LET'S RACE.
+
+No installation, Node.js, account, or internet connection is needed.
+Use an up-to-date Chrome or Edge browser with hardware acceleration.
+The Windows launcher opens a local-only server. It closes itself about
+five minutes after the last game tab is closed. Keep the game folder intact.
+
+CONTROLS
+Sonic runs forward automatically.
+Left / Right arrows or A / D: steer
+Space: jump (release and press again for the next jump)
+Shift: boost (collect rings to refill it)
+Down arrow or S: brake
+Esc: pause / resume
+
+Controller: left stick or D-pad steer; A jump; X or RT boost; B brake;
+Start pause. Activate the game once with the mouse to enable sound.
+Touch buttons are available on devices with a touch pointer.
+
+WORLD TOUR
+Emerald Coast: sunny islands, palms, and checkerboard cliffs.
+Sunset Ruins: sandstone arches and golden canyon climbs.
+Starlight Circuit: neon bridges and a city under the stars.
+Parrot Paradise: a 3.1 km super-track with two rideable vertical loops,
+banked jungle bends, a waterfall bridge, canopy tunnels, fallen logs,
+and swinging pendulums. Seven cheeky parrots dive from roadside trees.
+When a parrot chirps, its target lane is marked: change lanes or jump!
+Birds lock onto your lane at the warning, so moving afterward evades them.
+Sonic grips the track through loops automatically; jump again after exiting.
+Parrot knocks are recoverable. Little legends makes them gentler.
+Every race has two laps and three computer-controlled rivals.
+Little legends has gentler rivals; Speed stars rewards smart boosts.
+Gold, silver, and bronze mark finishing place. Best times and medals
+are saved in this browser on this PC; different browsers keep separate saves.
+
+All character geometry, scenery, effects, and music were created in code.
+Each world now has its own original, arranged soundtrack. Emerald Coast and
+Parrot Paradise feature Caribbean steel drums and island percussion.
+Use Sound settings in the menu or pause screen to adjust Music and Sound
+effects separately. The note button mutes everything. Settings are saved.
+Sonic belongs to SEGA. This fan game is unaffiliated with SEGA.
+No ads, purchases, tracking, or online multiplayer.

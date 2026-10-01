@@ -1,0 +1,89 @@
+/* The controls follow the usable window, rather than a particular phone model. */
+.touch{overscroll-behavior:none;-webkit-user-select:none;user-select:none}
+.touch .screen{min-height:100dvh}
+.touch #touch-controls{left:clamp(12px,3vw,28px);right:clamp(12px,3vw,28px);bottom:18px;gap:16px}
+.touch #touch-controls>div{gap:clamp(8px,2vw,16px)}
+.touch #touch-controls .steering-pad{position:relative;flex:1;min-width:0;max-width:220px;height:clamp(56px,16vw,78px);border:2px solid #ffffff80;border-radius:20px;background:#082954b8;pointer-events:auto;touch-action:none;user-select:none;box-shadow:0 4px 12px #03132555}
+.steering-track{position:absolute;left:26px;right:26px;top:calc(50% - 3px);height:6px;border-radius:5px;background:#ffffff25}
+.steering-fill{position:absolute;left:50%;top:calc(50% - 3px);height:6px;width:var(--steer-fill,0px);transform:scaleX(var(--steer-direction,1));transform-origin:left center;background:#ffdb45;border-radius:5px}
+.steering-thumb{position:absolute;left:50%;top:50%;transform:translate(calc(-50% + var(--steer-x,0px)),-50%);width:42px;height:42px;display:grid;place-items:center;border:2px solid #cdefff;background:#3689bd;color:white;border-radius:50%;font-size:22px;box-shadow:0 3px 8px #041a3b77;pointer-events:none}
+.steering-active .steering-thumb{background:var(--yellow);color:#102448;border-color:#fff3ac}
+.steering-edge{position:absolute;top:50%;transform:translateY(-50%);font-size:10px;color:#e7f4ff;pointer-events:none}
+.steering-left{left:10px}.steering-right{right:10px}
+.steering-pad:before,.steering-pad:after{content:'';position:absolute;top:calc(50% - 9px);height:18px;width:3px;background:#ffdb4599;border-radius:3px;pointer-events:none}
+.steering-pad:before{left:calc(50% - (50% - 28px)*.5)}.steering-pad:after{right:calc(50% - (50% - 28px)*.5)}
+.touch #touch-controls button{width:clamp(48px,15vw,78px);height:clamp(48px,15vw,78px);box-shadow:0 4px 12px #03132555}
+.touch .icon-button{min-width:44px;min-height:44px}
+.touch #toast{white-space:normal;text-align:center;width:92%;font-size:clamp(10px,2.2vw,16px);letter-spacing:1px}
+.touch #parrot-alert{white-space:normal;text-align:center;max-width:88%}
+.touch .race-bottom{bottom:114px}
+.touch .overlay{align-items:safe center}
+.touch .mix-dialog{max-height:90dvh;overflow-y:auto}
+.touch .race-controls{display:none}
+.touch .hero{padding-top:28px;min-height:0;flex:0 0 auto}
+.touch .hero .control-summary{font-size:10px;letter-spacing:.6px}
+.touch .track-card{min-height:92px}
+.touch[data-layout=expanded] .hero{min-height:270px;padding-top:26px}
+.touch[data-layout=expanded] h1{font-size:clamp(62px,8vw,94px)}
+.touch[data-layout=expanded] .track-list{grid-template-columns:repeat(2,minmax(0,1fr))}
+.touch[data-layout=expanded] .track-art{width:100px;height:74px}
+.touch[data-layout=expanded] .track-detail h3{font-size:17px}
+.touch[data-layout=expanded] .selection{margin-top:18px}
+.touch[data-layout=expanded] #touch-controls{left:28px;right:28px;bottom:22px}
+.touch[data-layout=expanded] .race-bottom{bottom:126px}
+.touch[data-layout=phone] .race-top{padding:14px 12px}
+.touch[data-layout=phone] .race-stats{gap:12px}
+.touch[data-layout=phone] .position-stat strong{font-size:37px}
+.touch[data-layout=phone] .position-stat small{font-size:6px;letter-spacing:.3px}
+.touch[data-layout=phone] .stat strong{font-size:20px}
+.touch[data-layout=phone] .stat small{font-size:7px;letter-spacing:.5px}
+.touch[data-layout=phone] .timer>span{font-size:6px;letter-spacing:.4px;max-width:100px}
+.touch[data-layout=phone] .timer strong{font-size:20px}
+.touch[data-layout=phone] .race-right{gap:4px}
+.touch[data-layout=phone] .race-right .sound-toggle{display:none}
+.touch[data-layout=phone] .screen{padding:18px 16px}
+.touch[data-layout=phone] h1{font-size:clamp(42px,14vw,60px);white-space:nowrap;letter-spacing:-3px}
+.touch[data-layout=phone] .top-actions{gap:7px}
+.touch[data-layout=phone] .brand{font-size:14px;gap:8px}
+.touch[data-layout=phone] .speed-panel{width:142px;padding:10px}
+.touch[data-layout=phone] .map-panel canvas{width:88px;height:70px}
+.touch[data-layout=phone] .map-panel span{font-size:5px;letter-spacing:.5px}
+.touch[data-layout=phone-landscape] .screen{display:grid;grid-template-columns:.9fr 1.1fr;gap:8px 24px;padding:14px 20px;min-height:100dvh}
+.touch[data-layout=phone-landscape] .topbar{grid-column:1/-1}
+.touch[data-layout=phone-landscape] .hero{min-height:0;padding-top:8px;align-self:start}
+.touch[data-layout=phone-landscape] h1{font-size:48px;letter-spacing:-3px;margin:10px 0 12px}
+.touch[data-layout=phone-landscape] .hero>p{font-size:11px;margin-bottom:12px}
+.touch[data-layout=phone-landscape] .hero .eyebrow{font-size:7px;letter-spacing:1px}
+.touch[data-layout=phone-landscape] .primary{padding:12px 14px;font-size:10px;gap:12px}
+.touch[data-layout=phone-landscape] .hero-actions{gap:12px}
+.touch[data-layout=phone-landscape] .hero .control-summary{margin-top:14px;font-size:8px}
+.touch[data-layout=phone-landscape] .selection{margin-top:0;align-self:start}
+.touch[data-layout=phone-landscape] .selection-heading{gap:8px;margin-bottom:10px}
+.touch[data-layout=phone-landscape] .selection-heading h2{display:none}
+.touch[data-layout=phone-landscape] .selection-heading .eyebrow{display:none}
+.touch[data-layout=phone-landscape] .difficulty{width:100%}
+.touch[data-layout=phone-landscape] .track-list{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.touch[data-layout=phone-landscape] .track-card{min-height:88px;padding:9px}
+.touch[data-layout=phone-landscape] .track-art{display:none}
+.touch[data-layout=phone-landscape] .track-detail h3{font-size:13px}
+.touch[data-layout=phone-landscape] .track-detail p{font-size:8px}
+.touch[data-layout=phone-landscape] footer{grid-column:1/-1;padding-top:0}
+.touch[data-layout=phone-landscape] .race-top{padding:10px 16px}
+.touch[data-layout=phone-landscape] .race-stats{gap:18px}
+.touch[data-layout=phone-landscape] .position-stat strong{font-size:32px}
+.touch[data-layout=phone-landscape] .position-stat small{font-size:6px}
+.touch[data-layout=phone-landscape] .stat strong{font-size:22px}
+.touch[data-layout=phone-landscape] .timer strong{font-size:22px}
+.touch[data-layout=phone-landscape] #touch-controls button{width:54px;height:54px}
+.touch[data-layout=phone-landscape] #touch-controls .steering-pad{height:54px;max-width:220px}
+.touch[data-layout=phone-landscape] #touch-controls{bottom:14px}
+.touch[data-layout=phone-landscape] .race-bottom{left:16px;right:16px;bottom:78px}
+.touch[data-layout=phone-landscape] .speed-panel{width:128px;padding:8px}
+.touch[data-layout=phone-landscape] .speed-panel strong{font-size:24px}
+.touch[data-layout=phone-landscape] .boost-label{margin-top:5px}
+.touch[data-layout=phone-landscape] .map-panel{display:none}
+.touch[data-layout=phone-landscape] #toast{top:19%;font-size:10px}
+.touch[data-layout=phone-landscape] #parrot-alert{top:31%;font-size:9px;padding:6px 10px}
+.touch[data-layout=phone-landscape] .overlay{padding:12px;align-items:start}
+.touch[data-layout=phone-landscape] .dialog{padding:20px;max-height:calc(100dvh - 24px);overflow-y:auto}
+@media(max-width:350px){.touch .hero-actions{gap:10px}.touch .primary{gap:14px;padding:15px 17px}.touch .race-stats{gap:9px}.touch .speed-panel{width:125px}.touch .topbar .ring-icon{width:20px;height:20px;border-width:5px}}
